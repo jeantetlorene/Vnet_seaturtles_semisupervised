@@ -3,9 +3,12 @@
 library(rblt)
 
 
+fileh5s<-dir("C:/Users/loren/Documents/Tortues/Martinique_Verte/fichiers_h5", full.names=T)
 fileh5s<-dir("D:/Martinique/Analyse/Acceleration corrigee h5", full.names=T)
+fileh5s<-dir("D:/Martinique/Leo/fichiers_h5_without_correction", full.names=T)
+fileh5s<-dir("E:/Martinique/Leo/fichiers_h5_with_correction", full.names=T)
 print(fileh5s)
-fileh5<-fileh5s[10]
+fileh5<-fileh5s[14]
 print(fileh5)
 
 
@@ -18,15 +21,15 @@ lui$gui()
 
 ##Visualisation with predictions
 
-fileh5s<-dir("D:/Martinique/Analyse/Acceleration corrigee h5", full.names=T)
+fileh5s<-dir("E:/Martinique/Leo/fichiers_h5_with_correction", full.names=T)
 print(fileh5s)
-fileh5<-fileh5s[8]
+fileh5<-fileh5s[14]
 print(fileh5)
 
 
-fileBehaviors<-dir("C:/Users/loren/Documents/Tortues/Martinique_Verte/Behavior", pattern = "\\.csv$", full.names=T)
+fileBehaviors<-dir("C:/Users/loren/Documents/Tortues/Martinique_Verte/Behavior_rblt", pattern = "\\.csv$", full.names=T)
 print(fileBehaviors)  
-fileBehavior=fileBehaviors[8] 
+fileBehavior=fileBehaviors[1] 
 print(fileBehavior)
 
 lg=LoggerCats$new(fileh5,filebehavior=fileBehavior,besep=";",metricshow=c(T,T,F,F,T,F),besaturation=0.7)
