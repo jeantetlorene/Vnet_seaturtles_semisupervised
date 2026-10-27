@@ -21,13 +21,13 @@ lui$gui()
 
 ##Visualisation with predictions
 
-fileh5s<-dir("E:/Martinique/Leo/fichiers_h5_with_correction", full.names=T)
+fileh5s<-dir("C:/Users/loren/Documents/Tortues/Martinique_Verte/fichiers_h5/Application", full.names=T)
 print(fileh5s)
-fileh5<-fileh5s[14]
+fileh5<-fileh5s[2]
 print(fileh5)
 
 
-fileBehaviors<-dir("C:/Users/loren/Documents/Tortues/Martinique_Verte/Behavior_rblt", pattern = "\\.csv$", full.names=T)
+fileBehaviors<-dir("C:/Users/loren/Documents/Tortues/Martinique_Verte/Preds_Bea_semi_supervised/Preds/C0/Postprocessing_predictions/AGM1_TV_GA_25052021", pattern = "\\.csv$", full.names=T)
 print(fileBehaviors)  
 fileBehavior=fileBehaviors[1] 
 print(fileBehavior)

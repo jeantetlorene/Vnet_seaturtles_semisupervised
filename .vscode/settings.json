@@ -1,0 +1,5 @@
+{
+    // Let VS Code download the JavaScript of third-party widgets (anywidget,
+    // used by plotly >= 6 FigureWidget / plotly-resampler) for pyblt.viewer().
+    "jupyter.widgetScriptSources": ["jsdelivr.com", "unpkg.com"]
+}
